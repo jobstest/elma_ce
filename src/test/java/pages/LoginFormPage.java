@@ -1,7 +1,6 @@
 package pages;
 
 import com.codeborne.selenide.SelenideElement;
-import com.codeborne.selenide.logevents.SelenideLogger;
 
 import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.open;
@@ -23,6 +22,7 @@ public class LoginFormPage {
 
         return this;
     }
+
     public LoginFormPage setUserName(String value) {
         step("Заполнить поле UserName", () -> {
             userNameInput.setValue(value);
